@@ -8,7 +8,7 @@ const ResidentList = ({ location }) => {
 
     const arrayPages = []
     const quantityPages = Math.ceil(location?.residents.length / RESIDENTS_PER_PAGE)
-    for (let i = 1; i < quantityPages; i++){
+    for (let i = 1; i <= quantityPages; i++){
       arrayPages.push(i)
     }
     
